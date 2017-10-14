@@ -15,5 +15,8 @@
   },
   "peerDependencies": {
     "react-native": "^0.49.3"
-  }
+  },
+  "files": [
+      "metabase.js"
+  ]
 }
