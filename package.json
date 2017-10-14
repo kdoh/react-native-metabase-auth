@@ -1,0 +1,19 @@
+{
+  "name": "react-native-metabase-auth",
+  "version": "0.1.0",
+  "description": "Manage sessions and make requests to Metabase instances in React Native apps.",
+  "main": "metabase.js",
+  "repository": "git@github.com:kdoh/react-native-metabase-auth",
+  "author": "Kyle Doherty <kyle.l.doherty@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react-native": "^0.49.3"
+  }
+}
