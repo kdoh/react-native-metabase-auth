@@ -1,7 +1,11 @@
 { 
-    "presets": [["env", {
-        "targets": {
-            "node": "current"
-        }}], "react-native"]
+    "presets": [
+        ["env", {
+            "targets": {
+                "node": "current"
+            }
+        }],
+        "react-native"
+    ]
 }
 
