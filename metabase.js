@@ -17,14 +17,12 @@ const DEFAULT_REQUEST_HEADERS = {
 /**
  * The main metabase object
  * @exports Metabase
- * @namespace metabase
+ * @namespace Metabase
 */
 const Metabase = {
     /**
      * Get an existing token from the store
-     * @method fetchSessionTokenFromStorage
      * @example Metabase.fetchSessionTokenFromStorage()
-     * @memberof metabase
     */
     fetchSessionTokenFromStorage: async (): string => {
         const token = await getItem('metabaseSessionToken')
@@ -32,12 +30,12 @@ const Metabase = {
     },
     /**
      * Log in a user with details
+     * @param { LoginDetails }
      * @example Metabase.login({
-     * username: 'kyle@metabase.com',
-     * metabaseUrl: 'metabase.mycompany.com',
-     * password: '12341234'
+     *   username: 'kyle@metabase.com',
+     *   metabaseUrl: 'metabase.mycompany.com',
+     *   password: '12341234'
      * })
-     * @memberof metabase
     */
     login: async ({
         username,
@@ -80,7 +78,6 @@ const Metabase = {
      *     first_name: 'New Kyle'
      *   })
      * })
-     * @memberof metabase
     */
     request: async (
         resource: string,
@@ -116,7 +113,6 @@ const Metabase = {
     /**
      * Destroy the session and remove the stored session token
      * @example Metabase.logout()
-     * @memberof metabase
     */
     logout: async (): void => {
         await Metabase.request('session', {

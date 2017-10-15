@@ -2,13 +2,13 @@
 
 ### Table of Contents
 
--   [metabase](#metabase)
+-   [Metabase](#metabase)
     -   [fetchSessionTokenFromStorage](#fetchsessiontokenfromstorage)
     -   [login](#login)
     -   [request](#request)
     -   [logout](#logout)
 
-## metabase
+## Metabase
 
 The main metabase object
 
@@ -22,24 +22,26 @@ Get an existing token from the store
 Metabase.fetchSessionTokenFromStorage()
 ```
 
+Returns **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
+
 ### login
 
 Log in a user with details
 
 **Parameters**
 
--   `$0` **any** 
-    -   `$0.username`  
-    -   `$0.password`  
-    -   `$0.metabaseUrl`  
+-   `LoginDetails` **any** 
+    -   `LoginDetails.username`  
+    -   `LoginDetails.password`  
+    -   `LoginDetails.metabaseUrl`  
 
 **Examples**
 
 ```javascript
 Metabase.login({
-username: 'kyle@metabase.com',
-metabaseUrl: 'metabase.mycompany.com',
-password: '12341234'
+  username: 'kyle@metabase.com',
+  metabaseUrl: 'metabase.mycompany.com',
+  password: '12341234'
 })
 ```
 
