@@ -5,7 +5,8 @@
                 "node": "current"
             }
         }],
-        "react-native"
+        "react-native",
+        "flow"
     ]
 }
 
