@@ -20,5 +20,5 @@ For a more complete sense of integrating Metabase auth into a react natvie app, 
 ### Metabase compatability
 This package should work with all Metabase instances running Metabase 0.24 or later.
 
-## Affiliation
+### Affiliation
 While I am a Metabase team member, this package is just a side project of mine and should not be considered an official Metabase product. That being said, I hope you find it useful!
