@@ -39,7 +39,15 @@ const Metabase = {
      * })
      * @memberof metabase
     */
-    login: async ({ username, password, metabaseUrl }): string => {
+    login: async ({
+        username,
+        password,
+        metabaseUrl
+    }: {
+        username: string,
+        password: string,
+        metabaseUrl: string
+    }): string => {
         try {
             const request = await fetch(`https://${metabaseUrl}/api/session`, {
                 method: 'POST',
@@ -61,14 +69,16 @@ const Metabase = {
     /**
      * Make requests to Metabase resources using the stored session token and Metabase url
      * @example
-     * Get the currently logged in user
+     *
+     * // Get the currently logged in user
      * Metabase.request('user/current')
-     * Update a user
-     * Metabase.request('user, {
-     * method: PUT,
-     * body: {
-     * first_name: 'New Kyle'
-     * }
+     *
+     * // Update a user
+     * Metabase.request('user', {
+     *   method: PUT,
+     *   body: JSON.stringify({
+     *     first_name: 'New Kyle'
+     *   })
      * })
      * @memberof metabase
     */

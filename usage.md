@@ -28,7 +28,7 @@ Log in a user with details
 
 **Parameters**
 
--   `$0` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** 
+-   `$0` **any** 
     -   `$0.username`  
     -   `$0.password`  
     -   `$0.metabaseUrl`  
@@ -57,14 +57,15 @@ Make requests to Metabase resources using the stored session token and Metabase 
 **Examples**
 
 ```javascript
-Get the currently logged in user
+// Get the currently logged in user
 Metabase.request('user/current')
-Update a user
-Metabase.request('user, {
-method: PUT,
-body: {
-first_name: 'New Kyle'
-}
+
+// Update a user
+Metabase.request('user', {
+  method: PUT,
+  body: JSON.stringify({
+    first_name: 'New Kyle'
+  })
 })
 ```
 
