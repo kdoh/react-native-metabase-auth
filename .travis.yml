@@ -1,4 +1,3 @@
-
 sudo: false
 language: node_js
 node_js:
@@ -9,3 +8,9 @@ cache:
   - node_modules
 script:
 - yarn run test
+env:
+  global:
+    secure: YXeT7oP4oeFicrpZDVZeoZMG9YG9DRx9nULbMzDeeSNJ1XKzXKNc3x1PE73Zvl93x4DbE9/9uNfQJWlm3+JRD+pKnifL3CSPJuVtTTKTtySXlpICAoNY404G7URMIE9qAvGXixP8Kj6tcAeSyKl5w1vZMLKTIxEb4Aq4F65fApSgRV1v9quLkPcm4t1jhLXQFO4cALChPqDVJXGDkJsVtvuyEOyXwpD4mrVUbFYH1pIQqVasfM+1MrrgMnaEDmNiJ2nsIMQhiiGi+2RnkW9qY83xTropg8uQ70gvLIrw7fTIhYilj752IoNuPAzm6zsN5j3GqqCRXPE+kWWE0DdmUItWdQ/r6MygMuhaMQanebb/2O2hSFo4JDHI+3MV6j5+gqXHZdMcqKtizu6hts65HZo7bFRUSpUBwr/DcpcnKnZscv2tGNhjRUzH7vWNcwORAVVcpRxU68bad6Slm9cIPQt1Wq4bkJw3BV0Jqf7+V+1laBSZioC/vbc86xe6dM73Nx4UNA8+7es9c692iJbwRildY7MIr9g+cMvUz9bZoETcpWuwcLUi4A95Vn9MQ/AYrbPhp0OCBi/JAZvHSLARk12FICn9ak05vZYbCaSAN9LrZMF0/yYS1pw0F8zgukIdtNl91KKt/AEvo0Zt6hOd1OcRxV0t/D2N/aP+Zke5XUg=
+before_install: yarn global add greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
