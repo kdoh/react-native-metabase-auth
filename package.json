@@ -11,7 +11,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react-native": "^4.0.0",
     "jest": "^21.2.1",
-    "react-native": "^0.49.3"
+    "react-native": "^0.50.0"
   },
   "scripts": {
     "test": "jest"
