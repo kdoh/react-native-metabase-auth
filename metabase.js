@@ -63,7 +63,6 @@ const Metabase = {
         try {
             const request = await fetch(`https://${urlPrefix}/api/${resource}`, params)
             const response = await request.json()
-            console.log('response', response)
             return response
         } catch (error) {
             console.error(error)
