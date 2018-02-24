@@ -15,7 +15,9 @@ yarn add react-native-metabase-auth
 2. Make requests on behalf of the user using `Metabase.request('resource')`
 3. When you're all done, use `Metabase.logout()` to destroy the session and remove it from storage.
 
-For a more complete sense of integrating Metabase auth into a react natvie app, I'd recommend checking out [the example app](https://github.com/kdoh/react-native-metabase-auth-example)
+For a more in depth look at usage, check out the [usage docs](usage.md)
+
+For a more complete sense of integrating Metabase auth into a React Native app, I'd recommend checking out [the example app](https://github.com/kdoh/react-native-metabase-auth-example)
 
 ### Metabase compatability
 This package should work with all Metabase instances running Metabase 0.24 or later.
