@@ -60,8 +60,7 @@ const Metabase = {
             await setItem('metabaseUrl', metabaseUrl)
             return id
         } catch (error) {
-            console.error(error)
-            return false
+            return error
         }
     },
     /**
@@ -107,7 +106,7 @@ const Metabase = {
             const response = await request.json()
             return response
         } catch (error) {
-            console.error(error)
+            return error
         }
     },
     /**

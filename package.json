@@ -1,6 +1,6 @@
 {
   "name": "react-native-metabase-auth",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Manage sessions and make requests to Metabase instances in React Native apps.",
   "main": "metabase.js",
   "repository": "git@github.com:kdoh/react-native-metabase-auth",
