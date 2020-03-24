@@ -13,8 +13,8 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "^4.0.0",
     "documentation": "^6.0.0",
-    "flow-bin": "^0.57.2",
-    "flow-remove-types": "^1.2.1",
+    "flow-bin": "^0.67.1",
+    "flow-remove-types": "^2.99.0",
     "jest": "^22.1.4",
     "react-native": "^0.53.3"
   },
