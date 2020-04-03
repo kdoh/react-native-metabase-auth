@@ -16,7 +16,7 @@
     "flow-bin": "^0.67.1",
     "flow-remove-types": "^2.99.0",
     "jest": "^22.1.4",
-    "react-native": "^0.53.3"
+    "react-native": "^0.62.1"
   },
   "scripts": {
     "test": "jest",
